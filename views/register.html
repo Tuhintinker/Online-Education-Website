@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Patient Registration</title>
+</head>
+<body>
+  <h2>Patient Registration Form</h2>
+  <form action="/register" method="POST">
+    <label>Name:</label><input type="text" name="name" required><br>
+    <label>Email:</label><input type="email" name="email" required><br>
+    <label>Contact:</label><input type="text" name="contact" required><br>
+    <label>Age:</label><input type="number" name="age" required><br>
+    <label>Address:</label><textarea name="address" required></textarea><br>
+    <label>Medical History:</label><textarea name="medicalHistory"></textarea><br>
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+extends ./layout/main.pug
+block link
+    link(rel="stylesheet", href="/css/style.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css")
+    link(rel="stylesheet", href="/css/swiper-bundle.min.css")
+block content 
+    .container
+          h1 Quiz Assessment
+          form(action="/submit-quiz" method="POST")
+            .question
+              p What is the capital of France?
+              label
+                input(type="radio" name="q1" value="Paris") 
+                P PARISE
+              label
+                input(type="radio" name="q1" value="London") 
+                P LONDON
+              label
+                input(type="radio" name="q1" value="Berlin") 
+                P BERLIN
+
+            .question
+              p What is 2 + 2?
+              label
+                input(type="radio" name="q2" value="3") 
+                P 3
+              label
+                input(type="radio" name="q2" value="4") 
+                P 4
+              label
+                input(type="radio" name="q2" value="5") 
+                P 5
+
+            button(type="submit") Submit
